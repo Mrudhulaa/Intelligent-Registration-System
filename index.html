@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intelligent Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    <p id="topError" class="top-error"></p>
+
+    <form id="registrationForm">
+        <label>First Name *</label>
+        <input type="text" id="firstName">
+        <span class="error" id="firstNameError"></span>
+
+        <label>Last Name *</label>
+        <input type="text" id="lastName">
+        <span class="error" id="lastNameError"></span>
+
+        <label>Email *</label>
+        <input type="email" id="email">
+        <span class="error" id="emailError"></span>
+
+        <label>Phone *</label>
+        <input type="text" id="phone">
+        <span class="error" id="phoneError"></span>
+
+        <label>Password *</label>
+        <input type="password" id="password">
+        <span id="strength"></span>
+
+        <label>Confirm Password *</label>
+        <input type="password" id="confirmPassword">
+        <span class="error" id="passwordError"></span>
+
+        <input type="checkbox" id="terms"> I agree to Terms
+        <span class="error" id="termsError"></span>
+
+        <button type="submit" id="submitBtn" disabled>Submit</button>
+    </form>
+
+    <p id="successMessage" class="success"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
